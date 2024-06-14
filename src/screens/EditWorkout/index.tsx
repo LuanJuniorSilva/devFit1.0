@@ -136,15 +136,12 @@ export default () => {
   const [modalLoad, setModalLoad] = useState('');
 
   const handleSave = () => {
-    // console.log('workoutItem', workoutItem);
     if (workoutItem) {
       let workout = workoutItem;
       if (workout.exercises.length > 0) {
         if (workout.id !== '') {
-          console.log('log no update');
           dispatch(updateWorkout(workout));
         } else {
-          console.log('log no add');
           workout.id = generateHash();
           dispatch(addWorkout(workout));
         }
@@ -247,8 +244,6 @@ export default () => {
     resetModal();
     setModalVisible(true);
   };
-
-  console.log('exercises', exercises);
 
   return (
     <Container>

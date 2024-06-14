@@ -85,7 +85,6 @@ export default () => {
   const toggleWorkoutDay = (d: number) => {
     let newWorkoutDays = [...workoutDays];
     if (newWorkoutDays.includes(d)) {
-      console.log('??', d);
       if (newWorkoutDays.length === 1) {
         Alert.alert('Calma ae! Você tem que treinar pelo menos 1 dia');
         return;

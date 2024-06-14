@@ -65,8 +65,6 @@ export default () => {
     isEdit ? route.params?.workout.exercises : [],
   );
 
-  // console.log('navigation', navigation.);
-
   const SaveWorkoutButton = () => {
     return (
       <SaveArea underlayColor="transparent">
@@ -85,8 +83,6 @@ export default () => {
       headerTitleAlign: 'center',
     });
   }, []);
-
-  console.log('exercises', exercises);
 
   return (
     <Container>
